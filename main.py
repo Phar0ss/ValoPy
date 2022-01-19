@@ -495,7 +495,7 @@ class Valorant():
                 cpm += 1
                 free += 1
                 SaveFree = open("results/{}/Custom.txt".format(today), "a+")
-                SaveFree.write(f"{User}:{Pass}")
+                SaveFree.write(f"{User}:{Pass}\n")
                 SaveFree.close()
                 return
             PvpNetHeaders = {"Content-Type": "application/json","Authorization": f"Bearer {AccessToken}","X-Riot-Entitlements-JWT": EntitlementsToken,"X-Riot-ClientVersion": "release-02.03-shipping-8-521855","X-Riot-ClientPlatform": "ew0KCSJwbGF0Zm9ybVR5cGUiOiAiUEMiLA0KCSJwbGF0Zm9ybU9TIjogIldpbmRvd3MiLA0KCSJwbGF0Zm9ybU9TVmVyc2lvbiI6ICIxMC4wLjE5MDQyLjEuMjU2LjY0Yml0IiwNCgkicGxhdGZvcm1DaGlwc2V0IjogIlVua25vd24iDQp9"}  
@@ -539,7 +539,7 @@ class Valorant():
             SaveHits.write(f"[--------------[Valo.py]--------------]\n| User&Pass: {User}:{Pass}\n| Region: {Region}\n| Level: {AccountLevel}\n| Email Verified: {EmailVerified}\n| Rank: {Rank}\n| VP: {ValorantPoints} - RP: {Radianite}\n|-------------[Skins({len(Skin)})]-------------]\n{SkinStr}[-------------------------------------]\n\n")
             SaveHits.close()
             SaveHitss = open("results/{}/Hits.txt".format(today), "a+")
-            SaveHitss.write(f"{User}:{Pass} | Region: {Region} | Level: {AccountLevel} | Email Verified: {EmailVerified} | Rank: {Rank} | VP: {ValorantPoints} | RP: {Radianite} | Total Skins: {len(Skin)}")
+            SaveHitss.write(f"{User}:{Pass} | Region: {Region} | Level: {AccountLevel} | Email Verified: {EmailVerified} | Rank: {Rank} | VP: {ValorantPoints} | RP: {Radianite} | Total Skins: {len(Skin)}\n")
             SaveHitss.close()
         except Exception as exp:
            if str(exp) == "list index out of range":
@@ -549,7 +549,7 @@ class Valorant():
                cpm += 1
                free += 1
                SaveFree = open("results/{}/Custom.txt".format(today), "a+")
-               SaveFree.write(f"{User}:{Pass}")
+               SaveFree.write(f"{User}:{Pass}\n")
                SaveFree.close()
                return
            else:
