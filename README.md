@@ -18,7 +18,8 @@
 ------------
 
 ### Download for EXE version:
---
+
+https://github.com/EndlessGod/ValoPy/releases/tag/v1.0
 
 ------------
 
