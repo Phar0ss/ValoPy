@@ -40,4 +40,4 @@ https://github.com/EndlessGod/ValoPy/releases/tag/v1.0
 ### Terms and Conditions
 `- This repository is for educational purposes only.`
 
-`I am not responsible for any actions for anyone who use this program.`
+`- I am not responsible for any actions for anyone who use this program.`
